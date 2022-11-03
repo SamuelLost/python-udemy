@@ -22,3 +22,9 @@ else:
 # Exemplo 2
 if logado is True:
     print("Bem-vindo usuário")
+
+# Ativo é verdadeiro?
+print(ativo is True)
+
+nome = "Geek University"
+print(nome.istitle())
