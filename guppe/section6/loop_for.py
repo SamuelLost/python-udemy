@@ -40,10 +40,29 @@ OBS: O valor final não é inclusive.
 """
 for numero in range(1, 10):
     print(f'{numero} ', end='')
-
+print()
 """
 Enumerate:
 ((0, 'G'), (1, 'e'), (2, 'e'), (3, 'k'), (4, ' '), (5, 'U')...
 """
 for i, v in enumerate(nome):
     print(f'{i}: {v} ', end='')
+print()
+
+# OBS: Quando não precisamos de um valor, podemos descartá-lo utilizando um underline (_)
+for _, v in enumerate(nome):
+    print(f'{v} ', end='')
+print()
+
+qtd = int(input('Quantas vezes esse loop deve rodar? '))
+for n in range(1, qtd + 1):
+    print(f'Imprimindo {n}')
+
+
+# ORIGINAL U+1F60D
+# MODIFICADO U0001F60D
+
+emoji = '\U0001F60D'
+for _ in range(3):
+    for num in range(1, 11):
+        print(f'{emoji * num}')
